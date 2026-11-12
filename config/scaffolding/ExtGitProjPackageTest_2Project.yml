@@ -1,30 +1,34 @@
+version: "1.0"
 info:
   model: int-scaffold
 packages:
-- gitBranch: main
+- name: ExtGitProjPackageTest_2Project
   gitServerName: GH_SK_Shared
   gitUrl: https://github.com/santhu736852
   gitUsername: santhu736852
-  name: ExtGitProjPackageTest_2Project
+  gitBranch: main
 services:
-- packages:
+- serviceName: project.extgitprojpackagetest_2.integrations:TestFlow
+  packages:
   - name: ExtGitProjPackageTest_2Project
-    version: 1.2.1
-  serviceName: project.extgitprojpackagetest_2.integrations:TestFlow
-- packages:
+    version: 1.1.1
+- serviceName: pub.date:currentNanoTime
+  packages:
   - name: WmPublic
     version: 12.1.0.0.1330
-  serviceName: pub.date:currentNanoTime
-- packages:
+- serviceName: project.extgitprojpackagetest_2.integrations:TestFlow3
+  packages:
   - name: ExtGitProjPackageTest_2Project
-    version: 1.2.1
-  serviceName: project.extgitprojpackagetest_2.integrations:TestFlow3
-- packages:
+    version: 1.1.1
+- serviceName: pub.date:getCurrentDate
+  packages:
   - name: WmPublic
     version: 12.1.0.0.1330
-  serviceName: pub.date:getCurrentDate
-- packages:
+- serviceName: project.extgitprojpackagetest_2.integrations:new2
+  packages:
   - name: ExtGitProjPackageTest_2Project
-    version: 1.2.1
-  serviceName: project.extgitprojpackagetest_2.integrations:simpleFlow
-version: '1.0'
+    version: 1.1.1
+- serviceName: project.extgitprojpackagetest_2.integrations:simpleFlow
+  packages:
+  - name: ExtGitProjPackageTest_2Project
+    version: 1.1.1
